@@ -43,9 +43,11 @@ $(document).ready(function () {
             }
         });
     }
+    $(window).on('resize', function(){
+        if ($(window).width() < 768) {
+            focusFunc()
+        }
+    });
 
-    if ($(window).width() < 768) {
-        focusFunc()
-    }
 });
 
