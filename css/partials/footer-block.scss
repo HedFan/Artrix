@@ -1,0 +1,273 @@
+.footer-block {
+  padding: 160px 0 51px;
+  background-color: $gray-bg;
+  height: auto;
+
+  &__logo {
+    max-width: 140px;
+    width: 100%;
+  }
+
+  &__police {
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  &__menu-footer {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-menu-item {
+  &__heading {
+    color: $white !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+    margin-bottom: 20px;
+  }
+
+  &__nav {
+    a {
+      color: $white;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+
+      &:hover, &:focus, &:active {
+        color: $white;
+        text-decoration: none;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.footer-pay-item {
+  display: inline-flex;
+
+  &__mc, &__visa, &__mir {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+    }
+  }
+
+  &__mc {
+    width: 61px;
+    &:before {
+      content: '';
+      background: url("../image/icon/mastercard.png") no-repeat;
+      background-size: 100%;
+      width: 49px;
+      height: 33px;
+    }
+  }
+
+  &__visa {
+    width: 83px;
+
+    &:before {
+      content: '';
+      background: url("../image/icon/visa-pay-logo.png") no-repeat;
+      background-size: 100%;
+      width: 70px;
+      height: 22px;
+      top: -5px;
+    }
+  }
+
+  &__mir {
+    width: 90px;
+
+    &:before {
+      content: '';
+      background: url("../image/icon/h-logo.png") no-repeat;
+      background-size: 100%;
+      width: 78px;
+      height: 22px;
+      top: -5px;
+    }
+  }
+}
+
+.footer-soc {
+  text-align: right;
+
+  &__heading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $white;
+    margin-bottom: 15px;
+  }
+}
+
+.footer-soc-item {
+  span {
+    i {
+      padding: 10px 10px;
+      width: 37px;
+      height: 37px;
+      border: 1px solid $white;
+      border-radius: 30px;
+      color: $white;
+    }
+  }
+
+  &__fb {
+    span {
+    i {
+      padding: 10px 13px;
+    }
+    }
+  }
+
+  &__vk {
+    span {
+      i {
+        padding: 10px 9px;
+      }
+    }
+  }
+
+  a {
+    margin-left: 10px;
+    &:hover, &:active, &:focus {
+      span {
+        i {
+          background-color: $white;
+          color: $gray-bg;
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-block {
+    padding: 80px 0 50px;
+  }
+
+}
+@media (max-width: 768px) {
+  .footer-block {
+    padding: 30px 0 1px;
+    &__police {
+      text-align: center;
+    }
+    &__logo {
+      max-width: 89px;
+      margin: auto;
+    }
+    &__soc-block {
+      margin-bottom: 30px;
+    }
+    &__menu-footer {
+      margin-bottom: 20px;
+    }
+  }
+  .footer-menu-item {
+    ul {
+      display: none;
+    }
+  }
+  .footer-menu-item {
+    text-align: center;
+    &__heading {
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+  .footer-soc {
+    text-align: center;
+  }
+  .footer-pay-item__mc:before, .footer-pay-item__mir:before, .footer-pay-item__visa:before {
+    content: '';
+    left: 9px;
+  }
+  .footer-pay-item {
+    height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-soc {
+    &__heading {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 15px;
+      margin-bottom: 10px;
+    }
+  }
+  .footer-soc-item {
+    span {
+      i {
+        width: 27px;
+        height: 27px;
+        font-size: 11px;
+      }
+    }
+    &__vk {
+      span {
+        i {
+          padding: 6px 0px;
+        }
+      }
+    }
+    &__fb, &__inst {
+      span {
+        i {
+          padding: 6px 8px;
+        }
+      }
+    }
+  }
+  .footer-pay-item {
+    &__mc {
+      width: 50px;
+      &:before {
+        content: '';
+        width: 35px;
+        height: 24px;
+      }
+    }
+    &__visa {
+      width: 64px;
+      &:before {
+        content: '';
+        width: 50px;
+        height: 18px;
+      }
+      }
+    &__mir {
+      width: 75px;
+      &:before {
+        content: '';
+        width: 56px;
+        height: 16px;
+      }
+    }
+  }
+  .footer-block {
+    &__police {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 15px;
+    }
+  }
+  &__soc-block {
+    margin-bottom: 15px;
+  }
+}

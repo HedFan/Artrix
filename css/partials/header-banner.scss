@@ -1,3 +1,25 @@
 .header-banner {
   margin-bottom: 100px;
 }
+
+@media (max-width: 768px) {
+  .header-banner {
+    background: url("../image/Баннер 1.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    min-height: 366px;
+    background-clip: border-box;
+    margin-bottom: 120px;
+    img {
+      display: none;
+    }
+  }
+
+}
+  @media (max-width: 576px) {
+    .header-banner {
+      margin-bottom: 105px;
+    }
+  }

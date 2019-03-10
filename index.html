@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Artrix</title>
-    <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap-select.css">
-    <link rel="stylesheet" type="text/css" href="/css/fonts.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/template_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/template_styles.css">
+
 
 </head>
 <body>
@@ -19,24 +20,23 @@
     <div class="header-block">
         <div class="header-block__line-up header-line-up">
             <div class="container">
-                <div class="row justify-content-between text-center">
-                    <div class="col-3">
+                <div class="row align-items-center justify-content-between text-center">
+                    <div class="col-6 col-md-3">
                         <div class="header-line-up__item header-line-up__item--fly">
                             Бесплатная доставка и примерка
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4 col-sm-3">
                         <div class="header-line-up__item header-line-up__item--clock">
-                            Пн - Вс 9:00 - 21:00
+                            Пн - Вс 9:00-21:00
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="header-line-up__item header-line-up__item--tel">
-                            <a href="tel:+78005552748">8 800 555 2748</a>
-                        </div>
+                    <div class="col-1 col-sm-3 col-md-3">
+                        <a href="tel:+78005552748" class="header-line-up__item header-line-up__item--tel">
+                            <span>8 800 555 2748</span>
+                        </a>
                     </div>
-                    <div class="col-3">
-
+                    <div class="col-3 d-none d-md-block">
                         <div class="header-line-up__item header-line-up__item--entry">
                             <a data-toggle="modal" data-target="#entryModal"
                                href="javascript:void[0]">Вход/Регистрация</a>
@@ -48,18 +48,25 @@
 
         <div class="header-block__head-list header-head-list">
             <div class="container">
-                <div class="row justify-content-between align-items-end">
-                    <div class="col-2">
-                        <div class="header-head-list__search">
-                            <input placeholder="Поиск" type="search">
+                <div class="row justify-content-between align-items-center align-items-md-end">
+                    <div class="col-1 d-md-none">
+                        <div class="header-head-list__menu js_header-show-menu">
+                            <span></span>
                         </div>
                     </div>
-                    <div class="col-2">
-                        <div class="header-head-list__logo">
-                            <img src="/image/icon/head-logo.svg" alt="artrix-logo">
+                    <div class="col-2 col-sm-2 col-md-3 col-lg-2">
+                        <div class="header-head-list__search header-search js_head-search-show">
+                            <div class="header-search__block js_head-search-block">
+                                <input placeholder="Поиск" type="search">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-4 col-sm-5">
+                        <a href="javascript:void[0]" class="header-head-list__logo">
+                            <img src="image/icon/head-logo.svg" alt="artrix-logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-3 col-lg-2">
                         <div class="row text-right">
                             <div class="col-6">
                                 <div class="header-head-list__like"></div>
@@ -74,30 +81,30 @@
                 </div>
             </div>
         </div>
-        <div class="header-block__menu-block header-menu-block">
+        <div class="header-block__menu-block header-menu-block js_header-menu-mobile">
             <div class="container">
-                <div class="row">
-                    <div class="header-menu-block__nav">
-                        <a>новинки</a>
-                    </div>
-                    <div class="header-menu-block__nav">
-                        <a>одежда</a>
-                    </div>
-                    <div class="header-menu-block__nav">
-                        <a>обувь</a>
-                    </div>
-                    <div class="header-menu-block__nav">
-                        <a>сумки</a>
-                    </div>
-                    <div class="header-menu-block__nav">
-                        <a>аксессуары</a>
-                    </div>
-                    <div class="header-menu-block__nav">
-                        <a>модный блог</a>
-                    </div>
-                    <div class="header-menu-block__nav">
-                        <a>sale</a>
-                    </div>
+                <div class="row align-items-center">
+                        <div class="js_header-menu-nav header-menu-block__nav">
+                            <a>новинки</a>
+                        </div>
+                        <div class="js_header-menu-nav header-menu-block__nav">
+                            <a>одежда</a>
+                        </div>
+                        <div class="js_header-menu-nav header-menu-block__nav">
+                            <a>обувь</a>
+                        </div>
+                        <div class="js_header-menu-nav header-menu-block__nav">
+                            <a>сумки</a>
+                        </div>
+                        <div class="js_header-menu-nav header-menu-block__nav">
+                            <a>аксессуары</a>
+                        </div>
+                        <div class="js_header-menu-nav header-menu-block__nav">
+                            <a>модный блог</a>
+                        </div>
+                        <div class="js_header-menu-nav header-menu-block__nav">
+                            <a>sale</a>
+                        </div>
                 </div>
             </div>
         </div>
@@ -109,7 +116,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <img src="/image/Баннер 1.png" alt="artrix banner">
+                    <img src="image/Баннер 1.png" alt="artrix banner">
                 </div>
             </div>
         </div>
@@ -118,11 +125,11 @@
 
 
 <section>
-
     <div class="block-item">
+        <h1 class="block-item__heading">Marc Cain Sport</h1>
         <div class="container">
             <div class="block-item__image">
-                <img src="/image/2019-02-07-12-16-www.mcbuy.ru.png" alt="artrix banner"></div>
+                <img src="image/2019-02-07-12-16-www.mcbuy.ru.png" alt="artrix banner"></div>
         </div>
     </div>
 </section>
@@ -131,43 +138,44 @@
     <div class="block-group-links">
         <div class="container">
             <div class="row align-items-end">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                     <div class="block-group-links__item links-group-item">
-                        <h1 class="links-group-item__heading">Новый образ</h1>
+                        <a href="javascript:void[0]"> <h1 class="links-group-item__heading">Новый образ</h1></a>
+                        <h2 class="links-group-item__subheading">Весений образ 2019 года в коралловом цвете</h2>
                         <div class="links-group-item__link">
-                            <img src="/image/кат1.png" alt="artrix banner Новый образ">
+                            <img src="image/кат1.png" alt="artrix banner Новый образ">
                             <div class="links-group-item__preload">
                                 <p> Весений образ 2019 года в коралловом цвете</p>
 
-                                <a href="javascript:void[0]" class="btn btn--black">
+                                <a href="javascript:void[0]" class="btn">
                                     купить</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-7">
+                <div class="col-12 col-md-7">
                     <div class="block-group-links__item links-group-item links-group-item--sm">
-                        <h1 class="links-group-item__heading">Распродажа</h1>
+                        <a href="javascript:void[0]"><h1 class="links-group-item__heading">Распродажа</h1></a>
                         <div class="links-group-item__link">
-                            <img src="/image/75bd10b0aeeaf430c0477eed4dba3b45.png" alt="artrix banner Распродажа">
+                            <img src="image/75bd10b0aeeaf430c0477eed4dba3b45.png" alt="artrix banner Распродажа">
                             <div class="links-group-item__preload">
                                 <p>Распродажа</p>
 
-                                <a href="javascript:void[0]" class="btn btn--black">
+                                <a href="javascript:void[0]" class="btn">
                                     купить</a>
                             </div>
                         </div>
 
                     </div>
                     <div class="block-group-links__item links-group-item links-group-item--sm">
-                        <h1 class="links-group-item__heading">Сумки</h1>
+                        <a href="javascript:void[0]"><h1 class="links-group-item__heading">Сумки</h1></a>
                         <div class="links-group-item__link">
-                            <img src="/image/сумка.png" alt="artrix banner Сумки">
+                            <img src="image/сумка.png" alt="artrix banner Сумки">
                             <div class="links-group-item__preload">
                                 <p>Сумки</p>
 
-                                <a href="javascript:void[0]" class="btn btn--black">
+                                <a href="javascript:void[0]" class="btn">
                                     купить</a>
                             </div>
                         </div>
@@ -181,37 +189,38 @@
 
 <section>
     <div class="block-blog-list">
+        <h1 class="block-blog-list__heading">Модный блог</h1>
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="order-12 order-md-1 col-12 col-md-7">
                     <div class="block-blog-list__item blog-item">
-                        <h2 class="blog-item__heading">Весенние тренды <br>Что купить?</h2>
-                        <a href="javascript:void[0]">
-                            <img src="/image/туфли.png" alt="artrix banner туфли">
+                        <a href="javascript:void[0]"> <h2 class="blog-item__heading">Весенние тренды Что купить?</h2></a>
+                        <div class="blog-item__link">
+                            <img src="image/туфли.png" alt="artrix banner туфли">
                             <div class="blog-item__preload">
-                                <a class="btn btn--red" href="javascript:void[0]">Читать</a>
+                                <a class="btn" href="javascript:void[0]">Читать</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="block-blog-list__item blog-item blog-item--around">
-                        <h2 class="blog-item__heading">6 главных трендов этого лета</h2>
-                        <a href="javascript:void[0]">
-                            <img src="/image/тренды.png" alt="artrix banner тренды">
+                        <a href="javascript:void[0]">  <h2 class="blog-item__heading">6 главных трендов этого лета</h2></a>
+                        <div class="blog-item__link">
+                            <img src="image/тренды.png" alt="artrix banner тренды">
                             <div class="blog-item__preload">
-                                <a class="btn btn--red" href="javascript:void[0]">Читать</a>
+                                <a class="btn" href="javascript:void[0]">Читать</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-5">
-                    <div class="block-blog-list__item blog-item--big">
-                        <h2 class="blog-item__heading">Новогодний дресс-код. В чем встречать?</h2>
-                        <a href="javascript:void[0]">
-                            <img src="/image/Слой 16.png" alt="artrix banner новогодний дресс-код">
+                <div class="order-1 order-md-12 col-12 col-md-5">
+                    <div class="block-blog-list__item blog-item blog-item--big">
+                        <a href="javascript:void[0]"><h2 class="blog-item__heading">Новогодний дресс-код. <br> В чем встречать?</h2></a>
+                        <div class="blog-item__link">
+                            <img src="image/Слой 16.png" alt="artrix banner новогодний дресс-код">
                             <div class="blog-item__preload">
-                                <a class="btn btn--red" href="javascript:void[0]">Читать</a>
+                                <a class="btn" href="javascript:void[0]">Читать</a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,12 +232,14 @@
     <div class="block-feedback-form">
         <div class="container">
             <h1 class="block-feedback-form__heading">Узнавайте первыми</h1>
-            <div class="block-feedback-form__description">О новых поступлениях, распродажах, трендах. Подпишитесь на
+            <p class="block-feedback-form__description">О новых поступлениях, распродажах, трендах. <br> Подпишитесь на
                 рассылку и получите скидку 10% уже на первый заказ!
-            </div>
-            <form action="">
+            </p>
+            <form type="POST" action="">
                 <div class="group-item">
-                    <input placeholder="Введите ваш e-mail" type="email"><a href="javascript:void[0]" type="submit">Подписаться</a>
+                    <input placeholder="Введите ваш e-mail" type="email">
+                    <a class="btn desctop" type="submit">Подписаться</a>
+                    <a class="btn mobile" type="submit"></a>
                 </div>
 
             </form>
@@ -240,68 +251,101 @@
 <footer>
     <div class="footer-block">
         <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <div class="footer-block__item">
-                        <img src="/image/icon/Векторный смарт-объект.png" alt="artrix logo">
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="footer-block__item footer-menu-item">
-                        <div class="footer-menu-item__heading">MCBUY</div>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Производство</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Философия</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Интервью Хельмута Шлоттера</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Модный блог</a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="footer-block__item footer-menu-item">
-                        <div class="footer-menu-item__heading">КАТАЛОГ</div>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Помощь</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Новинки</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Одежда</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Обувь</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Сумки</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Аксессуары</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Sale</a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="footer-block__item footer-menu-item">
-                        <div class="footer-menu-item__heading">Помощь</div>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Оформление заказа</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Таблица размеров</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Условия доставки</a>
-                        <a href="javascript:void[0]" class="footer-menu-item__nav">Условия возврата</a>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="footer-block__item footer-menu-item">
-                        <div class="footer-menu-item__heading">СПОСОБЫ ОПЛАТЫ</div>
-                        <div class="footer-menu-item__pay footer-pay-item">
-                            <div class="footer-pay-item__visa"></div>
-                            <div class="footer-pay-item__mc"></div>
-                            <div class="footer-pay-item__mir"></div>
+            <div class="footer-block__soc-block footer-block__soc-block mobile">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="footer-block__soc footer-soc">
+                            <div class="footer-soc__heading">Мы в социальных сетях</div>
+                            <div class="footer-soc__items footer-soc-item">
+                                <a class="footer-soc-item__fb" href="javascript:void[0]"> <span><i
+                                        class="fab fa-facebook-f"></i></span></a>
+                                <a class="footer-soc-item__inst" href="javascript:void[0]"><span><i
+                                        class="fab fa-instagram"></i></span></a>
+                                <a class="footer-soc-item__vk" href="javascript:void[0]"> <span><i
+                                        class="fab fa-vk"></i></span></a>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-4">
-                    <div class="footer-block__police">Copyright © MCBUY.RU 2018 Все права защищены</div>
-                </div>
-                <div class="col-2">
-                    <div class="footer-block__soc footer-soc">
-                        <div class="footer-soc__heading">Мы в социальных сетях</div>
-                        <div class="footer-soc__items">
-                            <span><i class="fab fa-facebook-f"></i></span>
-                            <span><i class="fab fa-instagram"></i></span>
-                            <span><i class="fab fa-vk"></i></span>
-                        </div>
 
+            <div class="footer-block__menu-footer">
+                <div class="row justify-content-center justify-content-md-start">
+                    <div class="order-12 order-md-1 col-12 col-md-2">
+                        <div class="footer-block__logo">
+                            <img src="image/icon/Векторный смарт-объект.png" alt="artrix logo">
+                        </div>
+                    </div>
+                    <div class="order-3 col-12 col-md-2">
+                        <div class="footer-block__item footer-menu-item">
+                            <a class="footer-menu-item__heading">MCBUY</a>
+                            <ul>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Производство</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Философия</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Интервью Хельмута
+                                    Шлоттера</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Модный блог</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-4 col-12 col-md-2">
+                        <div class="footer-block__item footer-menu-item">
+                            <a class="footer-menu-item__heading">КАТАЛОГ</a>
+                            <ul>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Помощь</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Новинки</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Одежда</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Обувь</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Сумки</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Аксессуары</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Sale</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-5 col-12 col-md-2">
+                        <div class="footer-block__item footer-menu-item">
+                            <a class="footer-menu-item__heading">Помощь</a>
+                            <ul>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Оформление заказа</a>
+                                </li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Таблица размеров</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Условия доставки</a></li>
+                                <li class="footer-menu-item__nav"><a href="javascript:void[0]">Условия возврата</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-11 order-md-12 col-12 col-md-4">
+                        <div class="footer-block__item footer-menu-item">
+                            <div class="footer-menu-item__heading">СПОСОБЫ ОПЛАТЫ</div>
+                            <div class="footer-menu-item__pay footer-pay-item">
+                                <div class="footer-pay-item__mc"></div>
+                                <div class="footer-pay-item__visa"></div>
+                                <div class="footer-pay-item__mir"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-block__soc-block footer-block__soc-block">
+                <div class="row justify-content-center justify-content-md-between align-items-end">
+                    <div class="col-12 col-md-6">
+                        <div class="footer-block__police">Copyright © MCBUY.RU 2018 Все права защищены</div>
+                    </div>
+                    <div class="d-none d-md-block col-6">
+                        <div class="footer-block__soc footer-soc">
+                            <div class="footer-soc__heading">Мы в социальных сетях</div>
+                            <div class="footer-soc__items footer-soc-item">
+                                <a class="footer-soc-item__fb" href="javascript:void[0]"> <span><i
+                                        class="fab fa-facebook-f"></i></span></a>
+                                <a class="footer-soc-item__inst" href="javascript:void[0]"><span><i
+                                        class="fab fa-instagram"></i></span></a>
+                                <a class="footer-soc-item__vk" href="javascript:void[0]"> <span><i
+                                        class="fab fa-vk"></i></span></a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -320,13 +364,13 @@
                         <input placeholder="Логин" type="text">
                         <input placeholder="Пароль" type="password">
                     </div>
-                    <a class="btn btn--black" type="submit">Войти</a>
+                    <a class="btn" type="submit">Войти</a>
                 </form>
                 <a class="modal-body__forgot-password" href="javascript:void[0]">Забыли пароль?</a>
                 <div class="modal-body__soc-link modal-soc-link">
-                    Войти с помощью
+                    Войти с помощью:
                     <div class="modal-soc-link__item">
-                        <a class="odn" href="javascript:void[0]"></a>
+                        <a class="ok" href="javascript:void[0]"></a>
                         <a class="vk" href="javascript:void[0]"></a>
                         <a class="fb" href="javascript:void[0]"></a>
                     </div>
@@ -334,7 +378,7 @@
 
                 <div class="modal-body__reg">
                     Еще нет аккаунта?
-                    <a class="btn btn--black js_reg-btn">Регистрация</a>
+                    <a class="btn js_reg-btn">Регистрация</a>
                 </div>
             </div>
             <div style="display: none" class="modal-body modal-body--reg-block js-modal-reg-block">
@@ -343,18 +387,21 @@
                         <input placeholder="Логин" type="text">
                         <input placeholder="E-mail" type="text">
                         <input placeholder="Пароль" type="password">
+                        <span>Не менее 6 символов</span>
                         <input placeholder="Подтвердите пароль" type="password">
-                        <input id="checkbox" name="checkbox" type="checkbox"> <label for="checkbox">Я даю согласие на
-                        <span>обработку персональных данных</span></label>
                     </div>
-                    <a class="btn btn--black" type="submit">Регистрация</a>
+                        <div class="group-item group-item--checkbox">
+                        <input id="checkbox" name="checkbox" type="checkbox"> <label for="checkbox">Я даю согласие на
+                        <a>обработку персональных данных</a></label>
+                    </div>
+                    <a class="btn" type="submit">Регистрация</a>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<script src="/js/lib/jquery-3.3.1.min.js"></script>
-<script src="/js/lib/bootstrap.min.js"></script>
-<script src="/js/script.js"></script>
+<script src="js/lib/jquery-3.3.1.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

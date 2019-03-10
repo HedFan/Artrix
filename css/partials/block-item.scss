@@ -1,10 +1,13 @@
 .block-item {
   margin-bottom: 100px;
+  &__heading {
+    display: none;
+  }
   &__image {
     position: relative;
     &:before {
       content: '';
-      background: url("/image/icon/Фигура 7 копия 3.png") no-repeat;
+      background: url("../image/icon/Фигура 7 копия 3.png") no-repeat;
       background-size: 100%;
       position: absolute;
       left: 0;
@@ -16,10 +19,55 @@
       z-index: -1;
     }
     img {
-      width: 90%;
+      width: 93%;
       margin-left: auto;
       display: block;
       padding-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .block-item {
+    &__image {
+      &:before {
+        content: '';
+        background-size: 80%;
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .block-item {
+    background: url("../image/2019-02-07-12-16-www.mcbuy.ru.png") no-repeat;
+    background-size: cover;
+    background-position: right -20px center;
+    height: 100%;
+    width: 100%;
+    min-height: 128px;
+    background-clip: border-box;
+    position: relative;
+    margin-bottom: 40px;
+    &__image {
+      display: none;
+    }
+
+    &__heading {
+      display: block;
+      position: absolute;
+      top: -70px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 578px) {
+  .block-item {
+    &__heading {
+      top: -55px;
     }
   }
 }

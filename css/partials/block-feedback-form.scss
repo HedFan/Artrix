@@ -1,0 +1,136 @@
+.block-feedback-form {
+  margin-bottom: 130px;
+
+  &__heading {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    width: 60%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto 30px;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      background: url("../image/icon/Фигура 8.png") no-repeat;
+      background-size: 100%;
+      width: 182px;
+      height: 7px;
+      bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      left: -182px;
+      background-position-x: left;
+    }
+
+    &:after {
+      content: '';
+      right: -182px;
+      background-position-x: right;
+    }
+  }
+
+  .group-item {
+    justify-content: center;
+    width: 100%;
+
+    input {
+      max-width: 376px;
+      width: 100%;
+      border: 1px solid $gray-bg;
+    }
+
+    .btn {
+      padding: 13px 25px;
+      height: 48px;
+      border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .block-feedback-form {
+    &__description {
+      &:before, &:after {
+        content: '';
+        background-size: 80%;
+      }
+    }
+  }
+}
+  @media (max-width: 992px) {
+    .block-feedback-form {
+      margin-bottom: 100px;
+    &__description {
+      &:after, &:before {
+        content: '';
+        background-size: 72%;
+      }
+      &:before {
+        content: '';
+        left: -150px;
+      }
+      &:after {
+        content: '';
+        right: -150px;
+      }
+    }
+    }
+  }
+@media (max-width: 768px) {
+  .block-feedback-form {
+    &__description {
+      width: 80%;
+      margin: 0 auto 40px;
+      &:before, &:after {
+        display: none;
+      }
+    }
+    .group-item {
+      align-items: flex-end;
+      input {
+        border-color: transparent;
+        border-top: 1px solid $gray-bg;
+        padding: 6px 30px 6px 20px;
+        height: 32px;
+      }
+
+      .btn {
+        padding: 6px 21px;
+        height: 32px;
+        border-radius: 0;
+          width: 45px;
+         display: block;
+          position: relative;
+          &:before {
+            content: '';
+            background: url("../image/icon/right-arrow_(2).png") no-repeat;
+            background-size: 100%;
+            position: absolute;
+            width: 11px;
+            height: 20px;
+            margin-left: -5px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .block-feedback-form {
+    margin-bottom: 30px;
+    &__heading {
+      margin-bottom: 15px;
+    }
+    &__description {
+      width: 95%;
+    }
+
+  }
+}
