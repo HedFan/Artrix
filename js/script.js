@@ -48,6 +48,9 @@ $(document).ready(function () {
             focusFunc()
         }
     });
+    if ($(window).width() < 768) {
+        focusFunc()
+    }
 
 });
 
